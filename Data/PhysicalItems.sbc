@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PhysicalItems>
+
+	<PhysicalItem>
+      <Id>
+        <TypeId>Ore</TypeId>
+        <SubtypeId>Lithium</SubtypeId>
+      </Id>
+      <DisplayName>Lithium Ore</DisplayName>
+      <Icon>Textures\GUI\Icons\ore_Li_lithium.dds</Icon>
+      <Size>
+        <X>0.08</X>
+        <Y>0.08</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>1</Mass>
+      <Volume>0.38</Volume>
+      <Model>Models\Components\Sphere.mwm</Model>
+	  <ExtraInventoryTooltipLine>Refines into Lithium Ingot</ExtraInventoryTooltipLine>
+      <PhysicalMaterial>Stone</PhysicalMaterial>
+      <IconSymbol>Li</IconSymbol>
+    </PhysicalItem>
+
+    <PhysicalItem>
+      <Id>
+        <TypeId>Ingot</TypeId>
+        <SubtypeId>LithiumIngot</SubtypeId>
+      </Id>
+      <DisplayName>Lithium Ingot</DisplayName>
+      <Icon>Textures\GUI\Icons\Ingot\ingot_Li_Lithium.dds</Icon>
+      <Size>
+        <X>0.05</X>
+        <Y>0.05</Y>
+        <Z>0.05</Z>
+      </Size>
+      <Mass>1</Mass>
+      <Volume>0.39</Volume>
+      <Model>Models\Ingots\lithium_ingot.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <IconSymbol>Li</IconSymbol>
+    </PhysicalItem>
+
+  </PhysicalItems>
+</Definitions>

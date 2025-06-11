@@ -1,0 +1,42 @@
+# Ignore mod build output
+*.sbm
+*.sbc.bak
+*.xml.bak
+
+# Ignore game-generated cache and metadata
+*.vs/
+*.user
+*.suo
+*.sdf
+*.db
+*.log
+*.tmp
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Steam workshop uploads
+*.bin
+*.compressed
+*.xmlcache
+*.pbm
+*.bak
+*.backup
+
+# Ignore .DS_Store or other OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore backup folders created by SE or plugins
+Backup*/
+*.bak
+
+# Python cache (if using scripts or tooling)
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Git submodules or nested worktrees (if any)
+.gitmodules
+.git/worktrees/

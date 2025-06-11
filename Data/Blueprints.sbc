@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+    
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>LithiumOreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Lithium</DisplayName>
+      <Icon>Textures\GUI\Icons\ingot\ingot_class.dds</Icon>
+      <Prerequisites>
+        <Item Amount="4" TypeId="Ore" SubtypeId="Lithium" />
+      </Prerequisites>
+      <Results>
+        <Item Amount="1" TypeId="Ingot" SubtypeId="LithiumIngot" />
+      </Results>
+      <BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>LithiumPlate</SubtypeId>
+      </Id>
+      <DisplayName>Lithium Plate</DisplayName>
+      <Icon>Textures\GUI\Icons\component\lithium_plate_component.dds</Icon>
+      <Prerequisites>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="LithiumIngot" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Platinum" />
+        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Gold" />
+		    <Item Amount="0.4" TypeId="Ingot" SubtypeId="Silver" />
+        <Item Amount="0.06" TypeId="Ingot" SubtypeId="Uranium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="LithiumPlate" />
+      <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+    </Blueprint>
+  </Blueprints>
+</Definitions>
