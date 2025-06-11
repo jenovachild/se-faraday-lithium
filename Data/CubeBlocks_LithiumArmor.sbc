@@ -18,12 +18,12 @@
         <CubeTopology>Box</CubeTopology>
         <ShowEdges>false</ShowEdges>
         <Sides>
-          <Side Model="Models\Cubes\Large\Armor\LithiumSquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
-          <Side Model="Models\Cubes\Large\Armor\LithiumSquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
-          <Side Model="Models\Cubes\Large\Armor\LithiumSquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
-          <Side Model="Models\Cubes\Large\Armor\LithiumSquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
-          <Side Model="Models\Cubes\Large\Armor\LithiumSquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
-          <Side Model="Models\Cubes\Large\Armor\LithiumSquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+          <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
         </Sides>
       </CubeDefinition>
       <Components>
@@ -183,6 +183,7 @@
       <NavigationDefinition>Default</NavigationDefinition>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
       <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
       <PCU>1</PCU>
       <IsAirTight>true</IsAirTight>
     </Definition>
@@ -323,6 +324,7 @@
       <DisassembleRatio>2.5</DisassembleRatio>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
       <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
       <PCU>1</PCU>
     </Definition>
 
@@ -432,6 +434,7 @@
       <DisassembleRatio>2.5</DisassembleRatio>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
       <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
     </Definition>
@@ -600,6 +603,7 @@
       <DisassembleRatio>2.5</DisassembleRatio>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
       <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
       <PCU>1</PCU>
     </Definition>
 
@@ -768,6 +772,7 @@
       <MirroringZ>Y</MirroringZ>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
       <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
       <PCU>1</PCU>
     </Definition>
 
@@ -937,6 +942,7 @@
       <NavigationDefinition>Default</NavigationDefinition>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
       <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
     </Definition>
@@ -947,7 +953,7 @@
 <Definition>
             <Id>
                 <TypeId>CubeBlock</TypeId>
-                <SubtypeId>SmallBlockArmorBlock</SubtypeId>
+                <SubtypeId>SmallBlockArmorBlockLithium</SubtypeId>
             </Id>
             <DisplayName>LithiumArmorBlock</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\lithium_armor_cube.dds</Icon>
@@ -1095,11 +1101,12 @@
                 </BoneInfo>
             </Skeleton>
             <BlockPairName>LithiumArmorBlock</BlockPairName>
-            <DeformationRatio>0.32</DeformationRatio>
             <BuildTimeSeconds>3</BuildTimeSeconds>
             <DisassembleRatio>2.5</DisassembleRatio>
             <EdgeType>Light</EdgeType>
             <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>2</Mass>
             <PCU>1</PCU>
             <PCUConsole>2</PCUConsole>
             <IsAirTight>true</IsAirTight>
@@ -1107,8 +1114,7 @@
 <Definition>
             <Id>
                 <TypeId>CubeBlock</TypeId>
-                <SubtypeId>SmallBlockArmorSlope</SubtypeId>
-            </Id>
+                <SubtypeId>SmallBlockArmorSlopeLithium</SubtypeId>            </Id>
             <DisplayName>LithiumArmorSlope</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\lithium_armor_slope.dds</Icon>
             <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -1222,19 +1228,19 @@
             <BlockPairName>LithiumArmorSlope</BlockPairName>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
-            <DeformationRatio>0.32</DeformationRatio>
             <BuildTimeSeconds>2</BuildTimeSeconds>
             <DisassembleRatio>2.5</DisassembleRatio>
             <EdgeType>Light</EdgeType>
             <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>2</Mass>
             <PCU>1</PCU>
             <PCUConsole>2</PCUConsole>
         </Definition>
         <Definition>
             <Id>
                 <TypeId>CubeBlock</TypeId>
-                <SubtypeId>SmallBlockArmorCorner</SubtypeId>
-            </Id>
+                <SubtypeId>SmallBlockArmorCornerLithium</SubtypeId>            </Id>
             <DisplayName>LithiumArmorCorner</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\lithium_armor_corner.dds</Icon>
             <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -1316,11 +1322,12 @@
             <MirroringX>YHalfX</MirroringX>
             <MirroringY>ZHalfY</MirroringY>
             <MirroringZ>YHalfY</MirroringZ>
-            <DeformationRatio>0.32</DeformationRatio>
             <BuildTimeSeconds>1</BuildTimeSeconds>
             <DisassembleRatio>2.5</DisassembleRatio>
             <EdgeType>Light</EdgeType>
             <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
             <PCU>1</PCU>
             <PCUConsole>2</PCUConsole>
             <IsAirTight>false</IsAirTight>
@@ -1328,8 +1335,7 @@
         <Definition>
             <Id>
                 <TypeId>CubeBlock</TypeId>
-                <SubtypeId>SmallBlockArmorCornerInv</SubtypeId>
-            </Id>
+                <SubtypeId>SmallBlockArmorCornerInvLithium</SubtypeId>            </Id>
             <DisplayName>LithiumArmorInvCorner</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\lithium_armor_inv_corner.dds</Icon>
             <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -1469,19 +1475,19 @@
             <MirroringX>YHalfX</MirroringX>
             <MirroringY>ZHalfY</MirroringY>
             <MirroringZ>YHalfZ</MirroringZ>
-            <DeformationRatio>0.32</DeformationRatio>
             <BuildTimeSeconds>3</BuildTimeSeconds>
             <DisassembleRatio>2.5</DisassembleRatio>
             <EdgeType>Light</EdgeType>
             <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
             <PCU>1</PCU>
             <PCUConsole>2</PCUConsole>
         </Definition>
         <Definition>
             <Id>
                 <TypeId>CubeBlock</TypeId>
-                <SubtypeId>HalfArmorBlock</SubtypeId>
-            </Id>
+                <SubtypeId>HalfArmorBlockLithium</SubtypeId>            </Id>
             <DisplayName>HalfLithiumArmorBlock</DisplayName>
             <Icon>Textures/GUI/Icons/Cubes/LithiumArmorSquareSlab.dds</Icon>
             <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -1637,14 +1643,15 @@
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
             <PCU>1</PCU>
             <PCUConsole>2</PCUConsole>
         </Definition>
         <Definition>
             <Id>
                 <TypeId>CubeBlock</TypeId>
-                <SubtypeId>HalfSlopeArmorBlock</SubtypeId>
-            </Id>
+                <SubtypeId>HalfSlopeArmorBlockLithium</SubtypeId>            </Id>
             <DisplayName>HalfSlopeLithiumArmorBlock</DisplayName>
             <Icon>Textures/GUI/Icons/Cubes/LithiumArmorSlopeSlab.dds</Icon>
             <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -1798,6 +1805,8 @@
             <DisassembleRatio>2.5</DisassembleRatio>
             <NavigationDefinition>Default</NavigationDefinition>
             <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
             <PCU>1</PCU>
             <PCUConsole>2</PCUConsole>
             <IsAirTight>false</IsAirTight>
@@ -1814,7 +1823,7 @@
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorCornerSquare</SubtypeId>
+        <SubtypeId>LargeBlockArmorCornerSquareLithium</SubtypeId>
       </Id>
       <DisplayName>LithiumArmorCornerSquare</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\CornerSquare_lithium.dds</Icon>
@@ -1932,12 +1941,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorCornerSquare</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorCornerSquareLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorCornerSquare</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\CornerSquare_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -2053,11 +2063,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorCornerSquareInverted</SubtypeId>
+        <SubtypeId>LargeBlockArmorCornerSquareInvertedLithium</SubtypeId>
       </Id>
       <DisplayName>LithiumArmorCornerSquareInverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\CornerSquareInverted_lithium.dds</Icon>
@@ -2181,12 +2193,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorCornerSquareInverted</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorCornerSquareInvertedLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorCornerSquareInverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\CornerSquareInverted_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -2308,12 +2321,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorHalfCorner</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorHalfCornerLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfCorner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -2421,13 +2435,14 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
       <IsAirTight>false</IsAirTight>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorHalfCorner</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorHalfCornerLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfCorner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -2534,13 +2549,14 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
       <IsAirTight>false</IsAirTight>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorHalfSlopeCorner</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorHalfSlopeCornerLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfSlopeCorner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfSlopeCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -2625,13 +2641,14 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
       <IsAirTight>false</IsAirTight>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorHalfSlopeCorner</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorHalfSlopeCornerLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfSlopeCorner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfSlopeCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -2715,13 +2732,14 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
       <IsAirTight>false</IsAirTight>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorHalfSlopeCornerInverted</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorHalfSlopeCornerInvertedLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfSlopeCornerInverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfSlopeCornerInverted_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -2897,12 +2915,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorHalfSlopeCornerInverted</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorHalfSlopeCornerInvertedLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfSlopeCornerInverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfSlopeCornerInverted_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -3077,12 +3096,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorHalfSlopedCorner</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorHalfSlopedCornerLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfSlopedCorner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfSlopedCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -3196,12 +3216,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorHalfSlopedCorner</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorHalfSlopedCornerLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfSlopedCorner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfSlopedCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -3314,12 +3335,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorHalfSlopedCornerBase</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorHalfSlopedCornerBaseLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfSlopedCornerBase</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfSlopedCornerBase_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -3456,12 +3478,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorHalfSlopedCornerBase</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorHalfSlopedCornerBaseLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfSlopedCornerBase</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfSlopedCornerBase_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -3597,12 +3620,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorHalfSlopeInverted</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorHalfSlopeInvertedLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfSlopeInverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfSlopeInverted_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -3764,12 +3788,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorHalfSlopeInverted</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorHalfSlopeInvertedLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorHalfSlopeInverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HalfSlopeInverted_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -3930,12 +3955,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSlopedCorner</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSlopedCornerLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopedCorner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SlopedCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -4068,12 +4094,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSlopedCorner</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSlopedCornerLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopedCorner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SlopedCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -4205,12 +4232,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSlopedCornerBase</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSlopedCornerBaseLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopedCornerBase</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SlopedCornerBase_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -4371,12 +4399,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSlopedCornerBase</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSlopedCornerBaseLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopedCornerBase</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SlopedCornerBase_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -4536,12 +4565,13 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSlopedCornerTip</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSlopedCornerTipLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopedCornerTip</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SlopedCornerTip_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -4639,13 +4669,14 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
       <IsAirTight>false</IsAirTight>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSlopedCornerTip</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSlopedCornerTipLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopedCornerTip</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SlopedCornerTip_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -4742,19 +4773,19 @@
       <Model />
       <UseModelIntersection>false</UseModelIntersection>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
       <IsAirTight>false</IsAirTight>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorRaisedSlopedCorner</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorRaisedSlopedCornerLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorRaisedSlopedCorner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorRaisedSlopedCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.46</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -4897,18 +4928,18 @@
       <MirroringZ>MinusHalfY</MirroringZ>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorRaisedSlopedCorner</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorRaisedSlopedCornerLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorRaisedSlopedCorner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorRaisedSlopedCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.46</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -5050,18 +5081,18 @@
       <MirroringZ>MinusHalfY</MirroringZ>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSlopeTransition</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSlopeTransitionLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransition</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransition_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.36</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -5185,18 +5216,18 @@
       <MirroringBlock>LargeBlockArmorSlopeTransitionMirrored</MirroringBlock>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSlopeTransition</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSlopeTransitionLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransition</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransition_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.36</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -5319,18 +5350,18 @@
       <MirroringBlock>SmallBlockArmorSlopeTransitionMirrored</MirroringBlock>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSlopeTransitionBase</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSlopeTransitionBaseLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransitionBase</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransitionBase_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.46</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -5481,18 +5512,18 @@
       <MirroringBlock>LargeBlockArmorSlopeTransitionBaseMirrored</MirroringBlock>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSlopeTransitionBase</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSlopeTransitionBaseLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransitionBase</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransitionBase_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.46</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -5642,19 +5673,19 @@
       <MirroringBlock>SmallBlockArmorSlopeTransitionBaseMirrored</MirroringBlock>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSlopeTransitionBaseMirrored</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSlopeTransitionBaseMirroredLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransitionBaseMirrored</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransitionBaseMirrored_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>Cube</BlockTopology>
       <Size x="1" y="1" z="1" />
-      <DeformationRatio>0.46</DeformationRatio>
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
         <CubeTopology>SlopeTransitionBaseMirrored</CubeTopology>
@@ -5804,12 +5835,13 @@
       <MirroringBlock>LargeBlockArmorSlopeTransitionBase</MirroringBlock>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSlopeTransitionBaseMirrored</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSlopeTransitionBaseMirroredLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransitionBaseMirrored</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransitionBaseMirrored_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -5817,7 +5849,6 @@
       <BlockTopology>Cube</BlockTopology>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
-      <DeformationRatio>0.46</DeformationRatio>
       <CubeDefinition>
         <CubeTopology>SlopeTransitionBaseMirrored</CubeTopology>
         <ShowEdges>true</ShowEdges>
@@ -5965,18 +5996,18 @@
       <MirroringBlock>SmallBlockArmorSlopeTransitionBase</MirroringBlock>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSlopeTransitionMirrored</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSlopeTransitionMirroredLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransitionMirrored</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransitionMirrored_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.36</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -6100,18 +6131,18 @@
       <MirroringBlock>LargeBlockArmorSlopeTransition</MirroringBlock>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSlopeTransitionMirrored</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSlopeTransitionMirroredLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransitionMirrored</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransitionMirrored_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.36</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -6234,18 +6265,18 @@
       <MirroringBlock>SmallBlockArmorSlopeTransition</MirroringBlock>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSlopeTransitionTip</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSlopeTransitionTipLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransitionTip</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransitionTip_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.16</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -6357,18 +6388,18 @@
       <PCUConsole>2</PCUConsole>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSlopeTransitionTip</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSlopeTransitionTipLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransitionTip</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransitionTip_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.16</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -6479,18 +6510,18 @@
       <PCUConsole>2</PCUConsole>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSlopeTransitionTipMirrored</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSlopeTransitionTipMirroredLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransitionTipMirrored</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransitionTipMirrored_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.16</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -6602,18 +6633,18 @@
       <PCUConsole>2</PCUConsole>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSlopeTransitionTipMirrored</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSlopeTransitionTipMirroredLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSlopeTransitionTipMirrored</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopeTransitionTipMirrored_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.16</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -6724,18 +6755,18 @@
       <PCUConsole>2</PCUConsole>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSquareSlopedCornerBase</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSquareSlopedCornerBaseLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSquareSlopedCornerBase</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSquareSlopedCornerBase_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.46</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -6882,18 +6913,18 @@
       <MirroringZ>MinusHalfY</MirroringZ>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSquareSlopedCornerBase</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSquareSlopedCornerBaseLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSquareSlopedCornerBase</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSquareSlopedCornerBase_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.46</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -7039,18 +7070,18 @@
       <MirroringZ>MinusHalfY</MirroringZ>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSquareSlopedCornerTip</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSquareSlopedCornerTipLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSquareSlopedCornerTip</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSquareSlopedCornerTip_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.16</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -7163,18 +7194,18 @@
       <MirroringZ>MinusHalfY</MirroringZ>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSquareSlopedCornerTip</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSquareSlopedCornerTipLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSquareSlopedCornerTip</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSquareSlopedCornerTip_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.16</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -7286,18 +7317,18 @@
       <MirroringZ>MinusHalfY</MirroringZ>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorSquareSlopedCornerTipInv</SubtypeId>
-      </Id>
+        <SubtypeId>LargeBlockArmorSquareSlopedCornerTipInvLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSquareSlopedCornerTipInv</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSquareSlopedCornerTipInv_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.32</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -7432,18 +7463,18 @@
       <MirroringZ>MinusHalfY</MirroringZ>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallBlockArmorSquareSlopedCornerTipInv</SubtypeId>
-      </Id>
+        <SubtypeId>SmallBlockArmorSquareSlopedCornerTipInvLithium</SubtypeId>      </Id>
       <DisplayName>LithiumArmorSquareSlopedCornerTipInv</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSquareSlopedCornerTipInv_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>Cube</BlockTopology>
-      <DeformationRatio>0.32</DeformationRatio>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
       <CubeDefinition>
@@ -7577,12 +7608,13 @@
       <MirroringZ>MinusHalfY</MirroringZ>
       <PCUConsole>2</PCUConsole>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmorPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmorPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -7614,12 +7646,13 @@
       <DisassembleRatio>2</DisassembleRatio>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmorCenterPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmorCenterPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorCenterPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorCenterPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -7653,12 +7686,13 @@
       <DisassembleRatio>2</DisassembleRatio>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmorSlopedSidePanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmorSlopedSidePanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorSlopedSidePanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopedSidePanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -7692,12 +7726,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmorSlopedPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmorSlopedPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorSlopedPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopedPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -7737,12 +7772,13 @@
       <PCU>1</PCU>
       <IsAirTight>true</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmorHalfPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmorHalfPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorHalfPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorHalfPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -7774,12 +7810,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmorHalfCenterPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmorHalfCenterPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorHalfCenterPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorHalfCenterPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -7810,12 +7847,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmorQuarterPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmorQuarterPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorQuarterPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightQuarterPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -7847,12 +7885,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmor2x1SlopedPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmor2x1SlopedPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopedPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -7888,12 +7927,13 @@
       <PCU>1</PCU>
       <IsAirTight>true</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmor2x1SlopedPanelTipLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmor2x1SlopedPanelTipLightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedPanelTipLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopedPanelTip_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -7929,12 +7969,13 @@
       <PCU>1</PCU>
       <IsAirTight>true</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmor2x1SlopedSideBasePanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmor2x1SlopedSideBasePanelLightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedSideBasePanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopedSideBasePanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -7969,12 +8010,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmor2x1SlopedSideTipPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmor2x1SlopedSideTipPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedSideTipPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopeSideTipPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8008,12 +8050,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmor2x1SlopedSideBasePanelLightInv</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmor2x1SlopedSideBasePanelLightInvLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedSideBasePanelLithiumInv</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopeSideBasePanelInv_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8048,12 +8091,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmor2x1SlopedSideTipPanelLightInv</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmor2x1SlopedSideTipPanelLightInvLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedSideTipPanelLithiumInv</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopeSideTipPanelInv_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8087,12 +8131,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmorHalfSlopedPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmorHalfSlopedPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorHalfSlopedPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorHalfSlopedPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8128,12 +8173,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmor2x1HalfSlopedPanelLightRight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmor2x1HalfSlopedPanelLightRightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1HalfSlopedPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1HalfSlopedPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8167,12 +8213,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmor2x1HalfSlopedTipPanelLightRight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmor2x1HalfSlopedTipPanelLightRightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1HalfSlopedTipPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1HalfSlopedTipPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8206,12 +8253,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmor2x1HalfSlopedPanelLightLeft</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmor2x1HalfSlopedPanelLightLeftLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1HalfSlopedPanelLithiumInv</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1HalfSlopedPanelInv_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8245,12 +8293,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeArmor2x1HalfSlopedTipPanelLightLeft</SubtypeId>
-      </Id>
+        <SubtypeId>LargeArmor2x1HalfSlopedTipPanelLightLeftLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1HalfSlopedTipPanelLithiumInv</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1HalfSlopedTipPanelInv_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8284,12 +8333,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeRoundArmorPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeRoundArmorPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorPanelRoundLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightRoundArmorPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8329,12 +8379,13 @@
       <IsAirTight>true</IsAirTight>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeRoundArmorPanelCornerLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeRoundArmorPanelCornerLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorPanelRoundCornerLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightRoundArmorPanelCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8377,12 +8428,13 @@
       <DisassembleRatio>2</DisassembleRatio>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeRoundArmorPanelFaceLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeRoundArmorPanelFaceLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorPanelRoundFaceLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightRoundArmorPanelFace_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8417,12 +8469,13 @@
       <IsAirTight>false</IsAirTight>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeRoundArmorPanelInvertedCornerLight</SubtypeId>
-      </Id>
+        <SubtypeId>LargeRoundArmorPanelInvertedCornerLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorPanelRoundInvertedCornerLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightRoundArmorPanelInvertedCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8470,12 +8523,13 @@
       <IsAirTight>true</IsAirTight>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>20</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmorPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmorPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8506,12 +8560,13 @@
       <DisassembleRatio>2</DisassembleRatio>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmorCenterPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmorCenterPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorCenterPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorCenterPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8544,12 +8599,13 @@
       <DisassembleRatio>2</DisassembleRatio>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmorSlopedSidePanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmorSlopedSidePanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorSlopedSidePanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopedSidePanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8582,12 +8638,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmorSlopedPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmorSlopedPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorSlopedPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorSlopedPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8626,12 +8683,13 @@
       <PCU>1</PCU>
       <IsAirTight>true</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmorHalfPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmorHalfPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorHalfPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorHalfPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8662,12 +8720,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmorHalfCenterPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmorHalfCenterPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorHalfCenterPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorHalfCenterPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8697,12 +8756,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmorQuarterPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmorQuarterPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorQuarterPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightQuarterPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8733,12 +8793,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmor2x1SlopedPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmor2x1SlopedPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopedPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8773,12 +8834,13 @@
       <PCU>1</PCU>
       <IsAirTight>true</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmor2x1SlopedPanelTipLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmor2x1SlopedPanelTipLightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedPanelTipLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopedPanelTip_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8813,12 +8875,13 @@
       <PCU>1</PCU>
       <IsAirTight>true</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmor2x1SlopedSideBasePanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmor2x1SlopedSideBasePanelLightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedSideBasePanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopedSideBasePanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8852,12 +8915,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmor2x1SlopedSideTipPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmor2x1SlopedSideTipPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedSideTipPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopeSideTipPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8890,12 +8954,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmor2x1SlopedSideBasePanelLightInvLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedSideBasePanelLithiumInv</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopeSideBasePanelInv_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8929,12 +8994,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmor2x1SlopedSideTipPanelLightInv</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmor2x1SlopedSideTipPanelLightInvLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1SlopedSideTipPanelLithiumInv</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1SlopeSideTipPanelInv_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -8967,12 +9033,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmorHalfSlopedPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmorHalfSlopedPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorHalfSlopedPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmorHalfSlopedPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -9007,12 +9074,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmor2x1HalfSlopedPanelLightRight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmor2x1HalfSlopedPanelLightRightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1HalfSlopedPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1HalfSlopedPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -9045,12 +9113,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmor2x1HalfSlopedTipPanelLightRight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmor2x1HalfSlopedTipPanelLightRightLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1HalfSlopedTipPanelLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1HalfSlopedTipPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -9083,12 +9152,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmor2x1HalfSlopedPanelLightLeft</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmor2x1HalfSlopedPanelLightLeftLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1HalfSlopedPanelLithiumInv</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1HalfSlopedPanelInv_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -9121,12 +9191,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallArmor2x1HalfSlopedTipPanelLightLeft</SubtypeId>
-      </Id>
+        <SubtypeId>SmallArmor2x1HalfSlopedTipPanelLightLeftLithium</SubtypeId>      </Id>
       <DisplayName>Armor2x1HalfSlopedTipPanelLithiumInv</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightArmor2x1HalfSlopedTipPanelInv_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -9159,12 +9230,13 @@
       <PCU>1</PCU>
       <IsAirTight>false</IsAirTight>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallRoundArmorPanelLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallRoundArmorPanelLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorPanelRoundLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightRoundArmorPanel_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -9203,12 +9275,13 @@
       <IsAirTight>true</IsAirTight>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallRoundArmorPanelCornerLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallRoundArmorPanelCornerLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorPanelRoundCornerLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightRoundArmorPanelCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -9250,12 +9323,13 @@
       <DisassembleRatio>2</DisassembleRatio>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallRoundArmorPanelFaceLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallRoundArmorPanelFaceLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorPanelRoundFaceLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightRoundArmorPanelFace_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -9289,12 +9363,13 @@
       <IsAirTight>false</IsAirTight>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
     <Definition>
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>SmallRoundArmorPanelInvertedCornerLight</SubtypeId>
-      </Id>
+        <SubtypeId>SmallRoundArmorPanelInvertedCornerLightLithium</SubtypeId>      </Id>
       <DisplayName>ArmorPanelRoundInvertedCornerLithium</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LightRoundArmorPanelInvertedCorner_lithium.dds</Icon>
       <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
@@ -9341,7 +9416,1690 @@
       <IsAirTight>true</IsAirTight>
       <PCU>1</PCU>
       <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+      <DeformationRatio>0</DeformationRatio>
+      <Mass>2</Mass>
     </Definition>
+
+
+
+
+    <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>LargeBlockArmorSlope2BaseLithium</SubtypeId>
+            </Id>
+            <DisplayName>LithiumArmorSlope2Base</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Slope2x1x1Base_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>Slope2Base</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlateSlope2BaseTop.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlateSlope2BaseFront.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlateSlope2BaseRight.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlateSlope2BaseLeft.mwm" PatternWidth="1" PatternHeight="1" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="15" />
+                <Component Subtype="LithiumPlate" Count="4" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Slope2BaseConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Slope2BaseConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Slope2BaseConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+                <MountPoint Side="Right" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BlockPairName>LithiumLargeBlockArmorSlope2Base</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>6</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>20</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+        </Definition>
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>LargeBlockArmorSlope2TipLithium</SubtypeId>
+            </Id>
+            <DisplayName>LithiumArmorSlope2Tip</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Slope2x1x1Tip_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <GuiVisible>false</GuiVisible>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>Slope2Tip</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Large\Armor\SlopePlateSlope2Tip.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleLeftPlateSlope2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleRightPlateSlope2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlateSlope2TipBack.mwm" PatternWidth="1" PatternHeight="1" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="5" />
+                <Component Subtype="LithiumPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.2" EndY="0.5" />
+                <MountPoint Side="Left" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+                <MountPoint Side="Left" StartX="0.8" StartY="0" EndX="1" EndY="0.1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
+                <MountPoint Side="Right" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+                <MountPoint Side="Right" StartX="0.8" StartY="0" EndX="1" EndY="0.5" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Slope2TipConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Slope2TipConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Slope2TipConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <BlockPairName>LithiumLargeBlockArmorSlope2Tip</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>2</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>20</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+        </Definition>
+        <!--    2x1x1 CORNER-->
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>LargeBlockArmorCorner2BaseLithium</SubtypeId>
+            </Id>
+            <DisplayName>LithiumArmorCorner2Base</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Base_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>Corner2Base</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Large\Armor\SlopePlateCorner2BaseTop.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleRightPlateCorner2Base.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlateCorner2BaseBottom.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlateCorner2BaseBack.mwm" PatternWidth="4" PatternHeight="2" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="8" />
+                <Component Subtype="LithiumPlate" Count="2" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+                <MountPoint Side="Front" StartX="0.5" StartY="0" EndX="1.0" EndY="1.0" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1.0" EndY="0.5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0" EndX="1.0" EndY="0.5" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <BlockPairName>LithiumLargeBlockArmorCorner2Base</BlockPairName>
+            <MirroringX>YHalfX</MirroringX>
+            <MirroringY>MinusHalfX</MirroringY>
+            <MirroringZ>HalfX</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>4</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>20</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>LargeBlockArmorCorner2TipLithium</SubtypeId>
+            </Id>
+            <DisplayName>LithiumArmorCorner2Tip</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Tip_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <GuiVisible>false</GuiVisible>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>Corner2Tip</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleLeftPlateCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleRightPlateCorner2TipRight.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\FaceTrianglePlateCorner2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleLeftPlateCorner2TipBottom.mwm" PatternWidth="1" PatternHeight="1" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="2" />
+                <Component Subtype="LithiumPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0.9" StartY="0.8" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0.6" StartY="0.2" EndX="1" EndY="0.8" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0" EndX="1" EndY="0.2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
+                <MountPoint Side="Right" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+                <MountPoint Side="Right" StartX="0.8" StartY="0" EndX="1" EndY="0.5" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.45" EndY="0.45" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2TipConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2TipConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <BlockPairName>LithiumLargeBlockArmorCorner2Tip</BlockPairName>
+            <MirroringX>HalfZ</MirroringX>
+            <MirroringY>MinusHalfZ</MirroringY>
+            <MirroringZ>XMinusHalfZ</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>2</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>20</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+        <!--    2x1x1 INV. CORNER-->
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>LargeBlockArmorInvCorner2BaseLithium</SubtypeId>
+            </Id>
+            <DisplayName>LithiumArmorInvCorner2Base</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\InvCorner2x1x1Base_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>InvCorner2Base</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Large\Armor\InvFaceTrianglePlateInvCorner2Base.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleRightPlateInvCorner2BaseRight.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleLeftPlateInvCorner2BaseFront.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleLeftPlateInvCorner2BaseBottom.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="18" />
+                <Component Subtype="LithiumPlate" Count="4" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Right" StartX="0.5" StartY="0.5" EndX="1.0" EndY="1" />
+                <MountPoint Side="Front" StartX="0" StartY="0.5" EndX="0.5" EndY="1" />
+                <MountPoint Side="Front" StartX="0.5" StartY="0.0" EndX="1.0" EndY="1" />
+                <MountPoint Side="Front" StartX="0.4" StartY="0.4" EndX="0.5" EndY="0.5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.0" EndY="1" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\InvCorner2BaseConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvCorner2BaseConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvCorner2BaseConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <BlockPairName>LithiumLargeBlockArmorInvCorner2Base</BlockPairName>
+            <MirroringX>HalfZ</MirroringX>
+            <MirroringY>MinusHalfZ</MirroringY>
+            <MirroringZ>XMinusHalfZ</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>8</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>20</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+        </Definition>
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>LargeBlockArmorInvCorner2TipLithium</SubtypeId>
+            </Id>
+            <DisplayName>LithiumArmorInvCorner2Tip</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\InvCorner2x1x1Tip_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <GuiVisible>false</GuiVisible>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>InvCorner2Tip</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Large\Armor\InvFaceTrianglePlateInvCorner2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleRightPlateInvCorner2TipRight.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleLeftPlateInvCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\CornerTriangleLeftPlateInvCorner2TipBottom.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Large\Armor\SquarePlateInvCorner2TipBack.mwm" PatternWidth="4" PatternHeight="2" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="13" />
+                <Component Subtype="LithiumPlate" Count="3" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Back" StartX="0.5" StartY="0.5" EndX="1" EndY="1" />
+                <MountPoint Side="Back" StartX="0.5" StartY="0.4" EndX="0.6" EndY="0.5" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0.8" StartY="0.9" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0.2" StartY="0.6" EndX="0.8" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0.5" EndX="0.2" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.1" EndY="0.2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.2" EndX="0.4" EndY="0.8" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.8" EndX="0.5" EndY="1" />
+                <MountPoint Side="Front" StartX="0" StartY="1.0" EndX="0.5" EndY="0.5" />
+                <MountPoint Side="Front" StartX="0.5" StartY="1.0" EndX="1.0" EndY="0.0" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\InvCorner2TipConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvCorner2TipConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvCorner2TipConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <BlockPairName>LithiumLargeBlockArmorInvCorner2Tip</BlockPairName>
+            <MirroringX>HalfZ</MirroringX>
+            <MirroringY>MinusHalfZ</MirroringY>
+            <MirroringZ>XMinusHalfZ</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>6</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>20</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+        </Definition>
+
+
+
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>SmallBlockArmorSlope2BaseLithium</SubtypeId>            </Id>
+            <DisplayName>LithiumArmorSlope2Base</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Slope2x1x1Base_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>Slope2Base</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlateSlope2BaseTop.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlateSlope2BaseFront.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlateSlope2BaseRight.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlateSlope2BaseLeft.mwm" PatternWidth="4" PatternHeight="2" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+                <MountPoint Side="Right" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\Armor\Slope2BaseConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\Armor\Slope2BaseConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\Armor\Slope2BaseConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BlockPairName>LithiumLargeBlockArmorSlope2Base</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>3</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>2</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+        </Definition>
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>SmallBlockArmorSlope2TipLithium</SubtypeId>            </Id>
+            <DisplayName>LithiumArmorSlope2Tip</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Slope2x1x1Tip_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <GuiVisible>false</GuiVisible>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>Slope2Tip</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Small\Armor\SlopePlateSlope2Tip.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleLeftPlateSlope2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleRightPlateSlope2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlateSlope2TipBack.mwm" PatternWidth="1" PatternHeight="1" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.2" EndY="0.5" />
+                <MountPoint Side="Left" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+                <MountPoint Side="Left" StartX="0.8" StartY="0" EndX="1" EndY="0.1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
+                <MountPoint Side="Right" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+                <MountPoint Side="Right" StartX="0.8" StartY="0" EndX="1" EndY="0.5" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\Armor\Slope2TipConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\Armor\Slope2TipConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\Armor\Slope2TipConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <BlockPairName>LithiumLargeBlockArmorSlope2Tip</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>1</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>2</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+        </Definition>
+        <!--    2x1x1 CORNER-->
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>SmallBlockArmorCorner2BaseLithium</SubtypeId>            </Id>
+            <DisplayName>LithiumArmorCorner2Base</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Base_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>Corner2Base</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Small\Armor\SlopePlateCorner2BaseTop.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleLeftPlate.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleRightPlateCorner2Base.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlateCorner2BaseBottom.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlateCorner2BaseBack.mwm" PatternWidth="4" PatternHeight="2" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+                <MountPoint Side="Front" StartX="0.5" StartY="0" EndX="1.0" EndY="1.0" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1.0" EndY="0.5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0" EndX="1.0" EndY="0.5" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\Armor\Corner2BaseConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\Armor\Corner2BaseConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\Armor\Corner2BaseConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <BlockPairName>LithiumLargeBlockArmorCorner2Base</BlockPairName>
+            <MirroringX>YHalfX</MirroringX>
+            <MirroringY>MinusHalfX</MirroringY>
+            <MirroringZ>HalfX</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>2</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>2</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>SmallBlockArmorCorner2TipLithium</SubtypeId>            </Id>
+            <DisplayName>LithiumArmorCorner2Tip</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Tip_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <GuiVisible>false</GuiVisible>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>Corner2Tip</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleLeftPlateCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleRightPlateCorner2TipRight.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\FaceTrianglePlateCorner2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleLeftPlateCorner2TipBottom.mwm" PatternWidth="1" PatternHeight="1" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0.9" StartY="0.8" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0.6" StartY="0.2" EndX="1" EndY="0.8" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0" EndX="1" EndY="0.2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
+                <MountPoint Side="Right" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+                <MountPoint Side="Right" StartX="0.8" StartY="0" EndX="1" EndY="0.5" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.45" EndY="0.45" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\Armor\Corner2TipConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\Armor\Corner2TipConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\Armor\Corner2TipConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <BlockPairName>LithiumLargeBlockArmorCorner2Tip</BlockPairName>
+            <MirroringX>HalfZ</MirroringX>
+            <MirroringY>MinusHalfZ</MirroringY>
+            <MirroringZ>XMinusHalfZ</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>1</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>2</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+        <!--    2x1x1 INV. CORNER-->
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>SmallBlockArmorInvCorner2BaseLithium</SubtypeId>            </Id>
+            <DisplayName>LithiumArmorInvCorner2Base</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\InvCorner2x1x1Base_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>InvCorner2Base</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Small\Armor\InvFaceTrianglePlateInvCorner2Base.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleRightPlateInvCorner2BaseRight.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleLeftPlateInvCorner2BaseFront.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleLeftPlateInvCorner2BaseBottom.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Right" StartX="0.5" StartY="0.5" EndX="1.0" EndY="1" />
+                <MountPoint Side="Front" StartX="0" StartY="0.5" EndX="0.5" EndY="1" />
+                <MountPoint Side="Front" StartX="0.5" StartY="0.0" EndX="1.0" EndY="1" />
+                <MountPoint Side="Front" StartX="0.4" StartY="0.4" EndX="0.5" EndY="0.5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.0" EndY="1" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\Armor\InvCorner2BaseConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\Armor\InvCorner2BaseConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\Armor\InvCorner2BaseConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <BlockPairName>LithiumLargeBlockArmorInvCorner2Base</BlockPairName>
+            <MirroringX>HalfZ</MirroringX>
+            <MirroringY>MinusHalfZ</MirroringY>
+            <MirroringZ>XMinusHalfZ</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>3</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>2</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+        </Definition>
+        <Definition>
+            <Id>
+                <TypeId>CubeBlock</TypeId>
+                <SubtypeId>SmallBlockArmorInvCorner2TipLithium</SubtypeId>            </Id>
+            <DisplayName>LithiumArmorInvCorner2Tip</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\InvCorner2x1x1Tip_lithium.dds</Icon>
+            <Description>Highest quality armor to give structure and shape to ships and stations. Extremely durable and ultra lightweight.</Description>
+            <GuiVisible>false</GuiVisible>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>Cube</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <CubeDefinition>
+                <CubeTopology>InvCorner2Tip</CubeTopology>
+                <ShowEdges>true</ShowEdges>
+                <Sides>
+                    <Side Model="Models\Cubes\Small\Armor\InvFaceTrianglePlateInvCorner2Tip.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleRightPlateInvCorner2TipRight.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleLeftPlateInvCorner2TipFront.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\CornerTriangleLeftPlateInvCorner2TipBottom.mwm" PatternWidth="1" PatternHeight="1" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+                    <Side Model="Models\Cubes\Small\Armor\SquarePlateInvCorner2TipBack.mwm" PatternWidth="4" PatternHeight="2" />
+                </Sides>
+            </CubeDefinition>
+            <Components>
+                <Component Subtype="LithiumPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="LithiumPlate" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Back" StartX="0.5" StartY="0.5" EndX="1" EndY="1" />
+                <MountPoint Side="Back" StartX="0.5" StartY="0.4" EndX="0.6" EndY="0.5" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0.8" StartY="0.9" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0.2" StartY="0.6" EndX="0.8" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0.5" EndX="0.2" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.1" EndY="0.2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.2" EndX="0.4" EndY="0.8" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.8" EndX="0.5" EndY="1" />
+                <MountPoint Side="Front" StartX="0" StartY="1.0" EndX="0.5" EndY="0.5" />
+                <MountPoint Side="Front" StartX="0.5" StartY="1.0" EndX="1.0" EndY="0.0" />
+            </MountPoints>
+            <PhysicsOption>Convex</PhysicsOption>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\Armor\InvCorner2TipConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\Armor\InvCorner2TipConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\Armor\InvCorner2TipConstruction_3.mwm" />
+            </BuildProgressModels>
+            <Skeleton>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="2" y="2" z="0" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="0" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="2" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="1" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="2" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+                <BoneInfo>
+                    <BonePosition x="1" y="0" z="1" />
+                    <BoneOffset x="127" y="127" z="127" />
+                </BoneInfo>
+            </Skeleton>
+            <BlockPairName>LithiumLargeBlockArmorInvCorner2Tip</BlockPairName>
+            <MirroringX>HalfZ</MirroringX>
+            <MirroringY>MinusHalfZ</MirroringY>
+            <MirroringZ>XMinusHalfZ</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>2</BuildTimeSeconds>
+            <DisassembleRatio>2.5</DisassembleRatio>
+            <GeneralDamageMultiplier>0.001</GeneralDamageMultiplier>
+            <DeformationRatio>0</DeformationRatio>
+            <Mass>2</Mass>
+            <PCU>1</PCU>
+            <PCUConsole>2</PCUConsole>
+        </Definition>
 
   </CubeBlocks>
 </Definitions>
